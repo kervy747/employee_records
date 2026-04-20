@@ -3,7 +3,7 @@
 use App\Http\Controllers\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home');
+Route::get('/', [EmployeeController::class, 'index']);
 Route::resource('employee', EmployeeController::class);
 
 

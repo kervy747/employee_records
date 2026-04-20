@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body class="flex">
-  <header class="font-bold text-5xl mt-4 block">
+<body class="grid">
+  <header class="flex font-bold text-5xl mt-4 w-full items-center justify-center">
     <h1>{{$headings}}</h1>
   </header>   
-
-  <div>
+  <br>
+  <div class="">
   {{ $slot }}
   </div>
 </body>
